@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="350.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.barosanu.view.LoginWindowController">
+<AnchorPane prefHeight="350.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.barosanu.controller.LoginWindowController">
    <children>
       <Label layoutX="58.0" layoutY="118.0" text="E-mail address" />
       <Label layoutX="58.0" layoutY="158.0" text="Password" />
