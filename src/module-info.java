@@ -5,4 +5,5 @@ module emailClientProject {
     requires javafx.controls;
 
     opens com.barosanu;
+    opens com.barosanu.view;
 }
