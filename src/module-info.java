@@ -3,6 +3,8 @@ module emailClientProject {
     requires javafx.graphics;
     requires javafx.web;
     requires javafx.controls;
+    requires activation;
+    requires java.mail;
 
     opens com.barosanu;
     opens com.barosanu.view;
