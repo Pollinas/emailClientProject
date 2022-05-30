@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class LoginWindowController extends BaseController {
+public class LoginWindowController extends BaseController{
 
     @FXML
     private TextField emailAddressField;
@@ -76,5 +76,7 @@ public class LoginWindowController extends BaseController {
         }
         return true;
     }
+
+
 
 }
