@@ -7,16 +7,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.web.HTMLEditor?>
 
-<AnchorPane prefHeight="478.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="525.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="47.0" layoutY="69.0" text=" Recipient" />
       <Label layoutX="53.0" layoutY="104.0" text="Subject" />
       <TextField fx:id="recipientTextField" layoutX="115.0" layoutY="65.0" prefHeight="25.0" prefWidth="465.0" />
       <TextField fx:id="subjectTextField" layoutX="115.0" layoutY="100.0" prefHeight="25.0" prefWidth="465.0" />
-      <HTMLEditor fx:id="htmlEditor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="25.0" layoutY="146.0" prefHeight="269.0" prefWidth="621.0" />
-      <Button layoutX="580.0" layoutY="428.0" mnemonicParsing="false" onAction="#sendButtonAction" prefHeight="25.0" prefWidth="62.0" text="Send" />
-      <Label fx:id="errorLabel" layoutX="35.0" layoutY="432.0" prefHeight="17.0" prefWidth="303.0" />
+      <HTMLEditor fx:id="htmlEditor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="25.0" layoutY="168.0" prefHeight="298.0" prefWidth="609.0" />
+      <Button layoutX="561.0" layoutY="477.0" mnemonicParsing="false" onAction="#sendButtonAction" prefHeight="25.0" prefWidth="62.0" text="Send" />
+      <Label fx:id="errorLabel" layoutX="25.0" layoutY="481.0" prefHeight="17.0" prefWidth="303.0" />
       <Label layoutX="52.0" layoutY="27.0" text="Account" />
       <ChoiceBox fx:id="emailAccountChoice" layoutX="115.0" layoutY="23.0" prefHeight="25.0" prefWidth="465.0" />
+      <Button layoutX="53.0" layoutY="134.0" mnemonicParsing="false" onAction="#attachButtonAction" text="Attach" />
    </children>
 </AnchorPane>
