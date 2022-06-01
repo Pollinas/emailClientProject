@@ -1,6 +1,5 @@
 package com.barosanu.model;
 
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 
@@ -20,7 +19,7 @@ public class EmailMessage {
     private boolean isRead;
     private Message message;
     private List<MimeBodyPart> attachementList = new ArrayList<MimeBodyPart>();
-    private boolean hasAttachement = false;
+    private boolean hasAttachements = false;
 
     public EmailMessage(String subject, String sender, String recipient, int size, Date date, boolean isRead, Message message){
         this.subject = new SimpleStringProperty(subject);
@@ -64,9 +63,16 @@ public class EmailMessage {
         return this.message;
     }
 
+    public boolean hasAttachement() {
+        return hasAttachements;
+    }
+
+    public List<MimeBodyPart> getAttachementList(){
+        return attachementList;
+    }
 
     public void addAttachement(MimeBodyPart mbp) {
-        hasAttachement = true;
+        hasAttachements = true;
         attachementList.add(mbp);
     }
 }
